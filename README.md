@@ -15,9 +15,8 @@ This assignment provides practice with constraint modeling, recursive backtracki
 
 ### <ins>Case 1</ins>: puzzle1.txt, 1 Solution
 
-|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
-|---|---|---|---|---|---|---|---|---|
 | 5 | 3 |   |   | 7 |   |   |   |   |
+|---|---|---|---|---|---|---|---|---|
 | 6 |   |   | 1 | 9 | 5 |   |   |   |
 |   | 9 | 8 |   |   |   |   | 6 |   |
 | 8 |   |   |   | 6 |   |   |   | 3 |
@@ -29,9 +28,8 @@ This assignment provides practice with constraint modeling, recursive backtracki
 
 ### <ins>Case 2</ins>: _ Solutions
 
-|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
-|---|---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |   |
+|---|---|---|---|---|---|---|---|---|
 |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |
 |   |   |   |   |   |   |   |   |   |
