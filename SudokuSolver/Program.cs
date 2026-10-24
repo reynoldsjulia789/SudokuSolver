@@ -44,6 +44,7 @@ public class Program
         Console.WriteLine(); // formatting in console logs
 
         //PrintSolution(solutions, inputFileName);
+        PrintSolution([], "testEmpty.txt");
 
         Console.WriteLine();
     }
@@ -125,7 +126,7 @@ public class Program
 
         if (solutions.Count == 0)
         {
-            writer.WriteLine("No solution exists.");
+            writer.WriteLine("\r\nNo solution exists.");
         }
         else
         {
