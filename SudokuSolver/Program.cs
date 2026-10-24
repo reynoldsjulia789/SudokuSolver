@@ -123,23 +123,30 @@ public class Program
 
         writer.WriteLine($"Input file: {filename}");
 
-        for (int solution = 0; solution < solutions.Count; solution++)
+        if (solutions.Count == 0)
         {
-            int charnum = 0;
-            writer.WriteLine();
-            writer.WriteLine($"Solution {solution + 1}:");
-
-            foreach (var num in solutions[solution])
+            writer.WriteLine("No solution exists.");
+        }
+        else
+        {
+            for (int solution = 0; solution < solutions.Count; solution++)
             {
-                writer.Write(num);
-                writer.Write(' ');
+                int charnum = 0;
+                writer.WriteLine();
+                writer.WriteLine($"Solution {solution + 1}:");
 
-                charnum++;
-
-                if (charnum == 9)
+                foreach (var num in solutions[solution])
                 {
-                    writer.WriteLine();
-                    charnum = 0;
+                    writer.Write(num);
+                    writer.Write(' ');
+
+                    charnum++;
+
+                    if (charnum == 9)
+                    {
+                        writer.WriteLine();
+                        charnum = 0;
+                    }
                 }
             }
         }
