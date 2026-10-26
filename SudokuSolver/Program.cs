@@ -38,13 +38,20 @@ public class Program
             return;
         }
 
-        // solve puzzles
-
-        // print solutions
         Console.WriteLine(); // formatting in console logs
 
-        //PrintSolution(solutions, inputFileName);
-        PrintSolution([], "testEmpty.txt");
+        // solve puzzles and print solutions
+        foreach (var (filename, puzzle) in _files)
+        {
+            var sudoku = new Sudoku(puzzle);
+
+            if (sudoku.HasConflictingGivens())
+            {
+                PrintErrorMessage($"{filename} contains conflicting given numbers, so no solution exists.");
+            }
+
+            PrintSolution(sudoku.Solve(), filename);
+        }
 
         Console.WriteLine();
     }

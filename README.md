@@ -8,38 +8,42 @@ This assignment provides practice with constraint modeling, recursive backtracki
 ### Specs
 
 * **Language Used:** C#
-* **CSP Model:**
-* **Search Algorithm:**
-* **Additional Heuristics Used:**
+* **CSP Constraints:** Alldiff(unit)
+* **Search Algorithm:** Recursive Backtracking
+* **Additional Heuristics Used:** MRV
+* **Optimizations:** Naked Pairs
 
 ## Test Cases
 
 ### <ins>Case 1</ins>: puzzle1.txt, 1 solution
-
-| 5 | 3 |   |   | 7 |   |   |   |   |
-|---|---|---|---|---|---|---|---|---|
-| 6 |   |   | 1 | 9 | 5 |   |   |   |
-|   | 9 | 8 |   |   |   |   | 6 |   |
-| 8 |   |   |   | 6 |   |   |   | 3 |
-| 4 |   |   | 8 |   | 3 |   |   | 1 |
-| 7 |   |   |   | 2 |   |   |   | 6 |
-|   | 6 |   |   |   |   | 2 | 8 |   |
-|   |   |   | 4 | 1 | 9 |   |   | 5 |
-|   |   |   |   | 8 |   |   | 7 | 9 |
+```
+5 3   |   7   |      
+6     | 1 9 5 |  
+  9 8 |       |   6  
+------+-------+------
+8     |   6   |     3
+4     | 8   3 |     1
+7     |   2   |     6
+------+-------+------
+  6   |       | 2 8  
+      | 4 1 9 |     5
+      |   8   |   7 9
+```
 
 ### <ins>Case 2</ins>: puzzle2.txt, 2 solutions
-
-| 2 | 9 | 5 | 7 | 4 | 3 | 8 | 6 | 1 |
-|---|---|---|---|---|---|---|---|---|
-| 4 | 3 | 1 | 8 | 6 | 5 | 9 |   |   |
-| 8 | 7 | 6 | 1 | 9 | 2 | 5 | 4 | 3 |
-| 3 | 8 | 7 | 4 | 5 | 9 | 2 | 1 | 6 |
-| 6 | 1 | 2 | 3 | 8 | 7 | 4 | 9 | 5 |
-| 5 | 4 | 9 | 2 | 1 | 6 | 7 | 3 | 8 |
-| 7 | 6 | 3 | 5 | 2 | 4 | 1 | 8 | 8 |
-| 9 | 2 | 8 | 6 | 7 | 1 | 3 | 5 | 4 |
-| 1 | 5 | 4 | 9 | 3 | 8 | 6 |   |   |
-
+```
+2 9 5 | 7 4 3 | 8 6 1
+4 3 1 | 8 6 5 | 9    
+8 7 6 | 1 9 2 | 5 4 3
+------+-------+------
+3 8 7 | 4 5 9 | 2 1 6
+6 1 2 | 3 8 7 | 4 9 5 
+5 4 9 | 2 1 6 | 7 3 8
+------+-------+------ 
+7 6 3 | 5 2 4 | 1 8 9
+9 2 8 | 6 7 1 | 3 5 4
+1 5 4 | 9 3 8 | 6    
+```
 ## How to Run
 1. Place .txt files containing sudoku puzzles into the directory `.\Puzzles\UnsolvedPuzzles`
     * Each .txt file must contain exactly **one** sudoku puzzle, which meets the following specs:
