@@ -8,6 +8,7 @@ This assignment provides practice with constraint modeling, recursive backtracki
 ### Specs
 
 * **Language Used:** C#
+* **CSP Constraints:** Alldiff(unit)
 * **Search Algorithm:** Recursive Backtracking
 * **Additional Heuristics Used:** MRV
 * **Optimizations:** Naked Pairs
